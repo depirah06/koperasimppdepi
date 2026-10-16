@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SPP · Koperasi Sekolah</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="style.css"></head>
+<body><div id="nav"></div><main class="wrap">
+<h1>Pembayaran SPP</h1><p class="sub">Tahun ajaran 2026/2027 · SPP Rp 150.000 per bulan.</p>
+<section style="margin-top:20px"><div class="info" id="info"></div></section>
+<section><h2>Tagihan</h2><div class="gulir"><table><thead><tr><th>Bulan</th><th>Nominal</th><th>Status</th><th>Aksi</th></tr></thead><tbody id="tagihan"></tbody></table></div></section>
+<section id="riwayat" hidden><h2>Informasi pembayaran</h2><div class="gulir"><table><thead><tr><th>Tanggal</th><th>Bulan</th><th>Tahun ajaran</th><th>Nominal</th><th>Metode</th><th>Status</th></tr></thead><tbody id="baris"></tbody></table></div></section>
+</main>
+<dialog id="dlg"><h2>Bayar SPP</h2><p id="dlgInfo" style="color:var(--abu)"></p>
+<label class="pilih"><input type="radio" name="metode" value="Transfer bank" checked> Transfer bank</label>
+<label class="pilih"><input type="radio" name="metode" value="QRIS"> QRIS</label>
+<label class="pilih"><input type="radio" name="metode" value="Tunai di koperasi"> Tunai di koperasi</label>
+<div class="tombol"><button class="btn garis-btn" style="color:var(--coklat)" onclick="dlg.close()">Batal</button><button class="btn" onclick="konfirmasiBayar()">Bayar sekarang</button></div></dialog>
+<script src="script.js"></script><script>init('spp');halamanSpp()</script></body></html>

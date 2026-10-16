@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Profil · Koperasi Sekolah</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="style.css"></head>
+<body><div id="nav"></div><main class="wrap">
+<h1>Profil siswa</h1>
+<div class="profil" style="margin-top:24px"><div><div class="avatar" id="avatar"></div><button class="btn kecil kuning" style="margin-top:12px" onclick="foto.click()">Ganti foto</button><input type="file" id="foto" accept="image/*" hidden></div>
+<div><div class="info" id="info"></div>
+<button class="btn" id="btnEdit" style="margin-top:22px">Ganti profil</button>
+<section id="boxEdit" style="margin-top:28px" hidden><h2>Ganti profil</h2>
+<form id="formProfil" style="max-width:420px">
+<label class="f" for="nama" style="margin-top:0">Nama lengkap</label><input type="text" id="nama" required>
+<label class="f" for="nis">NIS</label><input type="text" id="nis" inputmode="numeric" required>
+<label class="f" for="kelas">Kelas</label><input type="text" id="kelas" required>
+<label class="f" for="jurusan">Jurusan</label><input type="text" id="jurusan" required>
+<div style="display:flex;gap:10px;margin-top:16px"><button class="btn">Simpan perubahan</button><button type="button" class="btn garis-btn" id="batal" style="color:var(--coklat)">Batal</button></div></form></section></div></div></main>
+<script src="script.js"></script><script>init('profil');halamanProfil()</script></body></html>

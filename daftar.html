@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daftar · Koperasi Sekolah</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="style.css"></head>
+<body class="login">
+<div class="login-isi">
+<div class="logo"></div>
+<h1>Buat akun siswa</h1>
+<p class="sub">Isi data dirimu untuk mulai belanja seragam dan bayar SPP.</p>
+<form id="form">
+<label class="f" for="nama" style="margin-top:0">Nama lengkap</label><input type="text" id="nama" autocomplete="off" required>
+<label class="f" for="nis">NIS</label><input type="text" id="nis" inputmode="numeric" autocomplete="off" required>
+<label class="f" for="kelas">Kelas</label><input type="text" id="kelas" placeholder="Contoh: XI RPL 1" autocomplete="off" required>
+<label class="f" for="jurusan">Jurusan</label><input type="text" id="jurusan" placeholder="RPL atau TSM" autocomplete="off" required>
+<label class="f" for="pw">Kata sandi</label><input type="password" id="pw" autocapitalize="off" autocorrect="off" spellcheck="false" required>
+<p class="galat" id="galat" role="alert"></p>
+<button class="btn" style="width:100%;margin-top:6px">Daftar</button>
+<p style="margin-top:18px;text-align:center">Sudah punya akun? <a href="login.html" style="color:var(--coklat);font-weight:700">Masuk</a></p>
+</form></div>
+<script src="script.js"></script><script>init('daftar');halamanDaftar()</script></body></html>

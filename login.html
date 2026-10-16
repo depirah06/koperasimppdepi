@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Masuk · Koperasi Sekolah</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="style.css"></head>
+<body class="login">
+<div class="login-isi">
+<div class="logo"></div>
+<h1>Koperasi SMK Muthia Harapan Cicalengka</h1>
+<p class="sub">Masuk untuk belanja seragam dan bayar SPP.</p>
+<form id="form">
+<label class="f" for="nis">NIS</label><input type="text" id="nis" inputmode="numeric" autocomplete="off" required>
+<label class="f" for="pw">Kata sandi</label><input type="password" id="pw" autocapitalize="off" autocorrect="off" spellcheck="false" required>
+<p class="galat" id="galat" role="alert"></p>
+<button class="btn" style="width:100%;margin-top:6px">Masuk</button>
+<p style="margin-top:18px;text-align:center">Belum punya akun? <a href="daftar.html" style="color:var(--coklat);font-weight:700">Daftar</a></p>
+<p style="margin-top:14px;font-size:.88rem;text-align:center"><a href="#" id="reset" style="color:var(--coklat);font-weight:700">Tidak bisa masuk? Reset data</a></p>
+</form></div>
+<script src="script.js"></script><script>init('login');halamanLogin()</script></body></html>
